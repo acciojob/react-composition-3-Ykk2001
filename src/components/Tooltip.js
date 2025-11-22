@@ -5,7 +5,7 @@ export default function Tooltip({text,children}) {
   return (
     <div>
       <span className='tooltip'
-      onMouseOver={()=>setVisible(true)}
+      onMouseEnter={()=>setVisible(true)}
       onMouseLeave={()=>setVisible(false)}
       
       >
