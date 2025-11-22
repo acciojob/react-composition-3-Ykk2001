@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import './../styles/App.css';
+import "../styles/Tooltip.css"
 import Tooltip from "./Tooltip";
 
 const App = () => {
