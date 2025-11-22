@@ -9,7 +9,7 @@ export default function Tooltip({ text, children }) {
       onMouseLeave={() => setVisible(false)}
     >
       {children}
-      {visible && <span className="tooltiptext">{text}</span>}
+      {visible && <div className="tooltiptext">{text}</div>}
     </span>
   );
 }

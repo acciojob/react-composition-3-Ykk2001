@@ -1,20 +1,25 @@
 
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Tooltip.css"
 import Tooltip from "./Tooltip";
 
 const App = () => {
-  const[text,setText]=useState()
   return (
     <div>
         {/* Do not remove the main div */}
-        <h2>
-          <Tooltip text="This is a tooltip">Hover over me</Tooltip>
-        </h2>
+        
+          <Tooltip text="This is a tooltip">
+            <h2>Hover over me</h2>
+          </Tooltip>
+        
+           <hr></hr>
+        
+          <Tooltip text="This is another tooltip">
+            <p>Hover over me to see another tooltip</p>
+          </Tooltip>
 
-        <p>
-          <Tooltip text="This is another tooltip">Hover over me to see another tooltip</Tooltip>
-        </p>
+          <hr></hr>
+        
     </div>
   )
 }
